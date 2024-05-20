@@ -3,7 +3,7 @@ import random
 import matplotlib.pyplot as plt
 def Input(Array,n):
     for i in range(0,n):
-        ele=random.randrange(1,50)
+        ele=random.randrange(1,1000000)
         Array.append(ele)
 def selection_sort(Array,size):
     for ind in range(size):
@@ -26,7 +26,7 @@ for t in range(0,trail):
     print("sorted Array:")
     print(Array)
     N.append(n)
-    CPU.append(round(float(times)*1000000,2))
+    CPU.append(round(float(times)*10,2))
     print("N CPU")
 
 for t in range (0,trail):
