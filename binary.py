@@ -19,7 +19,7 @@ def binarysearch(r):
         for k in range(Repeat): 
             for i in range(N):
                 l=0
-                h=N+1
+                h=N-1
                 while(l<=h):
                    mid=int((l+h)/2)
                    if Arr[mid] == Key:
