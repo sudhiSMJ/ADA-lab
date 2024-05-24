@@ -17,7 +17,7 @@ def main():
     print("the topological order is:")
     while count < n:
         for k in range(n):
-            if indeg[k]==0 & flag[k]==0:
+            if indeg[k]==0 and flag[k]==0:
                 print(f"{k+1:3}",end="")
                 flag[k]=1
                 count+=1
