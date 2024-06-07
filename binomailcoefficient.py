@@ -12,7 +12,7 @@ def binomialCoeff_DP(n,k):
             if j==0 or j==i:
                 c[i][j]=1
             else:
-                c[i][j]=c[i-j][j-1]+c[i-1][j]
+                c[i][j]=c[i-1][j-1]+c[i-1][j]
     return c[n][k]
 n=int(input("enter the value of n:"))
 k=int(input("enter the value of k:"))
